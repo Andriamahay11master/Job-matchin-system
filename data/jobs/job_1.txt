@@ -1,0 +1,2 @@
+We are looking for a Python developer with experience in Flask, REST APIs, SQL databases,
+and machine learning. Knowledge of Docker and NLP is a plus.

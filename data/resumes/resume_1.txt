@@ -1,0 +1,3 @@
+Software engineer with 3 years of experience in Python, Flask, SQL, and machine learning.
+Built REST APIs and deployed applications using Docker.
+Experience with data analysis and NLP.
