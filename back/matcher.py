@@ -6,13 +6,14 @@ class ResumeJobMatcher:
     def __init__(self):
         self.vectorizer = TfidfVectorizer(
             stop_words="english",
-            ngram_range=(1, 2),
-            min_df=1
+            ngram_range=(1, 3),
+            min_df=1,
+            sublinear_tf=True,
+            norm="l2"
         )
 
     def compute_similarity(self, resume_text: str, job_text: str) -> float:
         texts = [resume_text, job_text]
-
         tfidf_matrix = self.vectorizer.fit_transform(texts)
 
         similarity = cosine_similarity(
@@ -24,4 +25,11 @@ class ResumeJobMatcher:
 
     def match_score(self, resume_text: str, job_text: str) -> int:
         similarity = self.compute_similarity(resume_text, job_text)
-        return int(similarity * 100)
+
+        # Rescale to be more human-friendly
+        score = similarity * 100
+
+        # Optional soft boost for UX
+        score = min(score * 1.5, 100)
+
+        return int(score)
