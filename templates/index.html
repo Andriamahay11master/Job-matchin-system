@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AI Resume Matcher</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <h1>AI Resume & Job Matching</h1>
+
+    <form method="POST">
+      <div class="container">
+        <div>
+          <h3>Resume</h3>
+          <textarea name="resume" required>{{ resume }}</textarea>
+        </div>
+
+        <div>
+          <h3>Job Description</h3>
+          <textarea name="job" required>{{ job }}</textarea>
+        </div>
+      </div>
+
+      <button type="submit">Analyze Match</button>
+    </form>
+
+    {% if score is not none %}
+    <h2>Match Score: {{ score }}%</h2>
+
+    <div class="results">
+      <div>
+        <h3>Matched Skills</h3>
+        <ul>
+          {% for skill in explanation.matched_skills %}
+          <li class="matched">{{ skill }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <h3>Missing Skills</h3>
+        <ul>
+          {% for skill in explanation.missing_skills %}
+          <li class="missing">{{ skill }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
+  </body>
+</html>
