@@ -1,28 +1,40 @@
 body {
   font-family: Arial, sans-serif;
-  padding: 30px;
   background: #f7f7f7;
+  padding: 30px;
 }
 
 h1 {
   text-align: center;
+  color: #2c3e50;
 }
 
 .container {
   display: flex;
   gap: 20px;
+  margin-bottom: 20px;
 }
 
 textarea {
   width: 100%;
-  height: 200px;
+  height: 220px;
   padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
 }
 
 button {
-  margin-top: 20px;
-  padding: 10px 20px;
+  padding: 12px 20px;
   font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background: #2c3e50;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.9;
 }
 
 .results {
@@ -32,9 +44,11 @@ button {
 }
 
 .matched {
-  color: green;
+  color: #27ae60;
 }
 
 .missing {
-  color: red;
+  color: #c0392b;
 }
+
+/*# sourceMappingURL=styles.css.map */
