@@ -18,7 +18,7 @@ AI resume and job matching prototype that compares resumes and job descriptions 
    venv\Scripts\activate
    ```
 
-2. (Optional) Install dependencies if your project provides a `requirements.txt`:
+2. Install dependencies:
 
    ```bash
    pip install -r requirements.txt
@@ -33,13 +33,13 @@ AI resume and job matching prototype that compares resumes and job descriptions 
 
 ## Project Structure
 
-- `app.py`  optional top-level runner
-- `back/`  core modules and tests:
-  - `preprocessing.py`  text preprocessing helpers
-  - `matcher.py`  main matching logic
-  - `evaluation.py`  evaluation helpers
-  - `test_preprocessing.py`, `test_matcher.py`  unit tests
-- `data/`  example job and resume text files
+- `app.py` optional top-level runner
+- `back/` core modules and tests:
+  - `preprocessing.py` text preprocessing helpers
+  - `matcher.py` main matching logic
+  - `evaluation.py` evaluation helpers
+  - `test_preprocessing.py`, `test_matcher.py` unit tests
+- `data/` example job and resume text files
 
 ## Usage
 
@@ -56,5 +56,3 @@ pytest
 ## Notes
 
 - This repository is a prototype; adapt preprocessing and matching logic for production use.
-- If you want, I can add a `requirements.txt` and a short example script showing matcher usage.
-
