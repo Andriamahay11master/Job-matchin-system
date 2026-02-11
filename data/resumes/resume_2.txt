@@ -1,0 +1,27 @@
+Full Stack Developer
+
+Summary:
+Highly motivated and detail-oriented full-stack developer with 5+ years of experience in designing, developing and deploying scalable web applications using a range of programming languages, frameworks and databases. Proficient in both front-end and back-end development, with a strong understanding of computer science fundamentals and software development life cycles.
+
+Technical Skills:
+- Proficient in JavaScript, HTML, CSS, React, Redux, Node.js, Express, MongoDB, MySQL, PostgreSQL, and Docker.
+- Strong understanding of computer science fundamentals, including data structures, algorithms, object-oriented programming and software design patterns.
+- Experience with agile development methodologies, including Scrum and Kanban.
+- Strong understanding of testing frameworks, including Jest, Enzyme, and Mocha.
+
+Professional Experience:
+- Full Stack Developer, ABC Company (2018-Present)
+  - Designed, developed and deployed multiple web applications using React, Redux, Node.js, Express, MongoDB, and Docker.
+  - Collaborated with cross-functional teams to identify and prioritize project requirements.
+  - Developed and maintained technical documentation.
+  - Participated in code reviews and contributed to the improvement of the code quality.
+  - Troubleshot and debugged software applications.
+- Junior Full Stack Developer, DEF Company (2015-2018)
+  - Assisted in the design, development and deployment of web applications using React, Redux, Node.js, Express, MongoDB, and Docker.
+  - Collaborated with cross-functional teams to identify and prioritize project requirements.
+  - Developed and maintained technical documentation.
+  - Participated in code reviews and contributed to the improvement of the code quality.
+  - Troubleshot and debugged software applications.
+
+Education:
+- Bachelor's Degree in Computer Science, XYZ University (2015)
